@@ -35,10 +35,7 @@ contours, hierarchy = cv2.findContours(dilation, cv2.RETR_EXTERNAL,
 # Creating a copy of image
 im2 = img.copy()
 
-# A text file is created and flushed
-# file = open("recognized.txt", "w+")
-# file.write("")
-# file.close()
+
 
 # Looping through the identified contours
 # Then rectangular part is cropped and passed on
@@ -54,19 +51,10 @@ for cnt in contours:
     # Cropping the text block for giving input to OCR
     cropped = im2[y:y + h, x:x + w]
 
-    # Open the file in append mode
-   # file = open("recognized.txt", "a")
-
     # Apply OCR on the cropped image
     text = pytesseract.image_to_string(cropped)
     print(text)
 
-    # Appending the text into file
-    # file.write(text)
-    # file.write("\n")
-    #
-    # # Close the file
-
-# file.close
+   
 cv2.imshow("text detected",im2)
 cv2.waitKey(0)
