@@ -13,7 +13,4 @@ this is simple code to detect text and recognize from an image.
  pip install pytesseract
  <br>
  <b>downlaod and install pytesseract.exe file from the given link</b><br>
- https://excellmedia.dl.sourceforge.net/project/tesseract-ocr/tesseract-ocr/1.03/tesseract-1.03.tar.gz
- 
- or 
- https://sourceforge.net/projects/tesseract-ocr/
+https://tesseract-ocr.github.io/tessdoc/4.0-with-LSTM
